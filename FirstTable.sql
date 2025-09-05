@@ -1,8 +1,8 @@
-create database Firsttable;
-use Firsttable;
+create database Firsttable;                 /* creating a database*/
+use Firsttable; /* using the database */
 
-create table Student (
-	ID int auto_increment primary key,
+create table Student (                     /*create a table which name is Student*/
+	ID int auto_increment primary key,     /* name + datatype + constrains */
     Student_Name varchar(100) not null,
     Email varchar(100) unique not null,
     Gender enum('Male','Female','Others'),
@@ -11,6 +11,6 @@ create table Student (
     created_at timestamp default current_timestamp
 );
 
-select * from Student;
-drop table Student;
-drop database firsttable;
+select * from Student;       /* '*'means all rows and columns*/
+drop table Student;          /* delete the table only*/
+drop database firsttable;    /* delete the database*/ 
