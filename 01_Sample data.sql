@@ -14,4 +14,3 @@ insert into student values (167, 'Shubhas', 'Kolkata', 7595883799, 'ghoshShubhas
 
 
 select * from student;
-update student set studentstatus = 'completed' where batch_name = 'BCS2E';
